@@ -1,15 +1,12 @@
-#Create initial list of integers
-List = list(range(100))            
-#Iterate the values in List to replace values that are divisable by "3" with "Fizz", "5" with "Buzz", and both "3 and 5" with "FizzBuzz"
-for x in List:
-    if List[x]%3 == 0 and List[x]%5 == 0:
-        List[x] = "FizzBuzz"
-    elif List[x]%3 == 0:
-        List[x] = "Fizz"
-    elif List[x]%5 == 0:
-        List[x] = "Buzz"
-#print the updated list
-print(List)
+for x in range(1,101):
+    if x%3 == 0 and x%5 == 0:
+        print("FizzBuzz")
+    elif x%3 == 0:
+        print("Fizz")
+    elif x%5 == 0:
+        print("Buzz")
+    else:
+        print(x)
 
 
 
